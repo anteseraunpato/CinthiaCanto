@@ -57,6 +57,7 @@ const Navbar = () => {
         opened: {
             x: 0,
             transition:{
+                when: "beforeChildren",
                 staggerChildren: 0.2,
             },
         },
@@ -114,7 +115,7 @@ const Navbar = () => {
                 {/* Items del menu*/}
 
                 {open &&(
-                <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-2xl z-40">
+                <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-purple-950 text-white flex flex-col items-center justify-center gap-8 text-2xl z-40">
                     
                     {links.map(link => (
                         <motion.div variants={listItemVariants} key={link.title}>
