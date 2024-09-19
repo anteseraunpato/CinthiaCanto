@@ -86,9 +86,9 @@ const Navbar = () => {
                 ))}
             </div>
             {/* Logo */}
-            <div className=" lg:flex w-1/3  justify-center">
-                <Link href="/" className="text-sm  rounded-md p-1 font-semibold flex items-center justify-center sm:justify-start sm:hidden">
-                <Image src="/logo.jpg" alt="" width={32} height={32} className="object-contain"/>
+            <div className="lg:flex w-1/3  justify-center">
+                <Link href="/" className="text-sm  rounded-md p-1 font-semibold flex items-center justify-center sm:justify-start">
+                <Image src="/logo.jpg" alt="" width={30} height={30} className="object-contain"/>
                 </Link>
             </div>
             {/*Redes sociales*/}
@@ -106,16 +106,16 @@ const Navbar = () => {
 
             {/* Mobile */}
             <div className="md:hidden">
-                <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={(()=>setOpen(!open))}>
-                    <motion.div variants={topVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-slate-400 rounded origin-left"></motion.div>
-                    <motion.div variants={centerVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-slate-400 rounded"></motion.div>
-                    <motion.div variants={bottomVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-slate-400 rounded origin-left"></motion.div>
+                <button className="w-10 h-8 flex flex-col ml-3 justify-between z-[51] relative" onClick={(()=>setOpen(!open))}>
+                    <motion.div variants={topVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-white rounded origin-left"></motion.div>
+                    <motion.div variants={centerVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-white rounded"></motion.div>
+                    <motion.div variants={bottomVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-white rounded origin-left"></motion.div>
                 </button>
 
                 {/* Items del menu*/}
 
                 {open &&(
-                <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-purple-950 text-white flex flex-col items-center justify-center gap-8 text-2xl z-40">
+                <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-purple-950 text-white flex flex-col items-center justify-center gap-8 text-2xl z-50">
                     
                     {links.map(link => (
                         <motion.div variants={listItemVariants} key={link.title}>
