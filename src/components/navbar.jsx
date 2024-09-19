@@ -80,7 +80,7 @@ const Navbar = () => {
     return (
         <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
             {/*Links */}
-            <div className="hidden md:flex gap-6 w-1/3 justify-center">
+            <div className="hidden md:flex gap-6 w-1/3 justify-center font-normal text-white">
                 {links.map (link=>(
                     <NavLink link={link} key={link.title}/>
                 ))}
@@ -88,7 +88,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="lg:flex w-1/3  justify-center">
                 <Link href="/" className="text-sm  rounded-md p-1 font-semibold flex items-center justify-center sm:justify-start">
-                <Image src="/logo.jpg" alt="" width={30} height={30} className="object-contain"/>
+                <Image src="/logo.jpg" alt="" width={40} height={40} className="object-contain rounded-full border-[#8978b6]"/>
                 </Link>
             </div>
             {/*Redes sociales*/}
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <Image src="/instagram.png" alt="" width={24} height={24}/>
                 </Link>
                 <Link href="/">
-                <Image src="/linkedin.png" alt="" width={24} height={24}/>
+                <Image className="bg-white rounded" src="/linkedin.png" alt="" width={24} height={24}/>
                 </Link>
             </div>
 
@@ -115,7 +115,7 @@ const Navbar = () => {
                 {/* Items del menu*/}
 
                 {open &&(
-                <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-purple-950 text-white flex flex-col items-center justify-center gap-8 text-2xl z-50">
+                <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-[#8978b6] text-white flex flex-col items-center justify-center gap-8 text-2xl z-50">
                     
                     {links.map(link => (
                         <motion.div variants={listItemVariants} key={link.title}>

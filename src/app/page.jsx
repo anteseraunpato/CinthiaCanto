@@ -26,8 +26,8 @@ const Homepage = () => {
 
 <div className="w-full flex gap-4">
   {/*Botones */}
-  <button className="p-4 rounded-lg ring-1 ring-[#8b7ab7] bg-[#8b7ab7] text-white">Platiquemos</button>
-  <button className="p-4 rounded-lg ring-1 ring-purple-500">Agendar</button>
+  <button className="p-4 rounded-lg ring-1 ring-[#db70a8] bg-[#db70a8] text-white">Agenda tu cita</button>
+  <button className="p-4 rounded-lg ring-1 ring-[#db70a8]"><a rel="stylesheet" href="/about"> Conoce más</a></button>
   </div>
 </div>
   </div>
