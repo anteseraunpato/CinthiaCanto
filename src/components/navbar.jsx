@@ -7,10 +7,9 @@ import {motion} from "framer-motion";
 
 
 const links = [
-    {url: "/", title:"Home"},
-    {url: "/about", title:"Acerca"},
-    {url: "/portfolio", title:"Portafolio"},
-    {url: "/contact", title:"Contacto"},
+    {url: "/", title:"Inicio"},
+    {url: "/trayectoria", title:"Trayectoria"},
+    {url: "https://wa.me/15551234567", title:"Contacto"},
     ];
 
 const Navbar = () => {
